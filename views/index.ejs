@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Covid-19 SA</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Montserrat|Permanent+Marker|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+  </head>
+  <body>
+    <h1>Covid-19 Data in South Africa</h1>
+
+    <div class="info">
+      <h2><i class="fas fa-viruses"></i> Total Cases: <%= confirmed %></h2>
+      <hr />
+      <h2>
+        <i class="fas fa-lungs-virus"></i> Total Active Cases: <%= active %>
+      </h2>
+      <h3>New Active Cases: <%= newActive %></h3>
+      <h2>
+        <i class="fas fa-hand-holding-medical"></i> Total Recoveries: <%=
+        recovered %>
+      </h2>
+      <h3>New Recoveries: <%= newRecovered %></h3>
+      <h2><i class="fas fa-book-dead"></i> Total Deaths: <%= deaths %></h2>
+      <h3>New Deaths: <%= newDeaths %></h3>
+      <h2>
+        <i class="fas fa-chart-line"></i> Fatality Rate: <%= fatalityRate %> %
+      </h2>
+      <h4>Last Updated: <%= lastUpdate %></h4>
+    </div>
+
+    <div>
+      <p>Copywrite Kerin Lowry <%=year%></p>
+      <a target="_blank" href="https://icons8.com/icons/set/coronavirus"
+        >Coronavirus icon</a
+      >
+      icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
+  </body>
+</html>
