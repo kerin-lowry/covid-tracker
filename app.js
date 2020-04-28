@@ -30,7 +30,7 @@ app.get("/", function (req, res) {
       const newActive = reportData.data[0].active_diff;
       const newRecovered = reportData.data[0].recovered_diff;
       const newDeaths = reportData.data[0].deaths_diff;
-      const fatalityRate = reportData.data[0].fatality_rate * 100;
+      const fatalityRate = reportData.data[0].fatality_rate;
       const lastUpdate = reportData.data[0].last_update;
       //console.log(confirmed, active, recovered, deaths);
       res.render("index", {
